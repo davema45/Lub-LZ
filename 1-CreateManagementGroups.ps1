@@ -9,3 +9,6 @@ $parentGroup = New-AzManagementGroup -GroupName $paramTenant.tenantid
 foreach($group in $subGroups) {
     New-AzManagementGroup -GroupName $group -ParentId $parentGroup.Id
 }
+
+#Move subscription to Prod group
+New-AzManagementGroupSubscription -GroupId "Prod" -SubscriptionId $paramTenant.subscriptionid

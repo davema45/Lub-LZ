@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "name": {
+      "value": "D2010-vnet"
+    },
+    "addressPrefixes": {
+      "value": ["10.184.16.0/21"]
+    },
+    "subnets": {
+      "value": [
+        {
+          "addressPrefix": "10.184.16.0/24",
+          "name": "GatewaySubnet"
+        },
+        {
+          "addressPrefix": "10.184.17.0/24",
+          "name": "DCSubnet"
+        }
+      ]
+    }
+  }
+}
