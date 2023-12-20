@@ -7,7 +7,7 @@ $templateParameterFile = ".\modules\virtual-network\main.parameters.json"
 #Import Tenant settings
 $paramTenant = Import-Csv ".\tenantconfig.csv"
 
-#Generate connectivity resource group
+#Generate connectivity resource group name
 $resourceGroup = $paramTenant.tenantid + "-NET"
 
 #Select Subscription to create resources

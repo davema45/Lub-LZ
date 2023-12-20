@@ -9,3 +9,8 @@ Steps:
 -Create policies defined in Prod management group  
 -Setup lighthouse  
 -enable peering Qlan <> Tenant  
+
+Lubon tenant groepen:
+daily mgmt
+policy mgmt
+Owner
