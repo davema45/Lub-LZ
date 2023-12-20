@@ -1,6 +1,6 @@
 #Import Tenant settings
 $paramTenant = Import-Csv ".\tenantconfig.csv"
-$resourceGroups = "mgmt","identity","AVD","GEN","storage","NET"
+$resourceGroups = "mgmt-rg","identity-rg","AVD-rg","GEN-rg","storage-rg","NET-rg"
 
 #Select Subscription to create resources
 Select-AzSubscription -Subscription $paramTenant.subscriptionid
